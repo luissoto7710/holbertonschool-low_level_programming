@@ -1,6 +1,6 @@
-#include <stfio.h>
-#include <time.h>
 #include <stdlib.h>
+#include <time.h>
+#include <stdio.h>
 /**
  *main - main function
  *
@@ -8,7 +8,7 @@
  *
  *Return: Always return 0
  */
-int main (void)
+int main(void)
 {
 	int n;
 

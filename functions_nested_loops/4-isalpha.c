@@ -1,9 +1,11 @@
 #include <stdio.h>
 #include "main.h"
 /**
-* _isalpha - dawg im tired
+*_isalpha - dawg im tired
 *
-* Return: 1 if successfull
+*@c: single letter input
+*
+*Return: 1 if successfull
 */
 int _isalpha(int c)
 {

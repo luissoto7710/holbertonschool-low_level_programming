@@ -1,10 +1,10 @@
 #include "main.h"
 #include <stdio.h>
 /**
-* prints_alphabet - putchar
+*print_alphabet - putchar wutchar
 *
 *
-* Return: void
+*Return: void
 */
 void print_alphabet(void)
 {

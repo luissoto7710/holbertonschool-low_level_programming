@@ -1,11 +1,11 @@
+#include "main.h"
 #include <stdio.h>
-#include "holberton.h"
 /**
-*_abs - absolute
+*_abs - absolute value 
 *
-*@ab: input
+*@ab: integer 
 *
-*Return: absolut value
+*Return: absolute value
 */
 int _abs(int ab)
 {

@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdio.h>
 /**
-*_abs - absolute value 
+*_abs - absolute value
 *
 *@ab: integer
 *

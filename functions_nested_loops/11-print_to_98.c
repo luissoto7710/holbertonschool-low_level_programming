@@ -4,6 +4,8 @@
 *print_to_98 - last one
 *
 *@n: starting num
+*
+*Retrun: 0
 */
 void print_to_98(int n)
 {

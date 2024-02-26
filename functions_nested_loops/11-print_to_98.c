@@ -3,8 +3,6 @@
 *print_to_98 - last one
 *
 *@n: idk
-*
-*Return - i hope this works
 */
 void print_to_98(int n)
 {

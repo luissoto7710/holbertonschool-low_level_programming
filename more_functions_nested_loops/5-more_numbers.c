@@ -1,5 +1,5 @@
-#include <stdio.c>
-#include "main.c"
+#include <stdio.h>
+#include "main.h"
 
 /**
  * more numbers - prints numbers 0 - 14

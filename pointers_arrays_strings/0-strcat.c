@@ -2,8 +2,8 @@
 #include <stdio.h>
 /**
  *_strcat - desc
- *@dest:
- *@src:
+ *@dest: desc
+ *@src: desc
  * Return: succ
  */
 char *_strcat(char *dest, char *src)

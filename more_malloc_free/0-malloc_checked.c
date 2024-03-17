@@ -1,15 +1,22 @@
 #include <stdlib.h>
+#include "main.h"
+#include <stdio.h>
+#include <limits.h>
 /**
- * malloc_checked - desc
- * @b: b
- * Return: return
+ *malloc_checked - desc 
+ *@b: b
+ *Return: return
  */
 void *malloc_checked(unsigned int b)
 {
-	void *ret;
+	int *ptr;
 
-	ret = malloc(b);
-	if (ret == NULL)
+	ptr = malloc(b);
+
+	if (ptr == NULL)
+
 		exit(98);
-	return (ret);
+
+	return (ptr);
+
 }

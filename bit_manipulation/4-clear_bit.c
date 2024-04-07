@@ -2,11 +2,13 @@
 #include "main.h"
 
 /**
- * clear_bit - desc
- * @n: var
- * @index: index
+ * clear_bit - Clears the bit at a given index.
+ * @n: Pointer to the number.
+ * @index: The index of the bit to be cleared, starting from 0.
  *
- * Description: DESC
+ * Description: Sets the bit at position @index to 0. If @index is out of
+ * bounds, the function returns -1. Otherwise, it returns 1.
+ * Return: 1 if successful, -1 on error.
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {

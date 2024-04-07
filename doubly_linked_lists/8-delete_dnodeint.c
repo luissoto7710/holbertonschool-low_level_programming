@@ -1,47 +1,26 @@
 #include "lists.h"
 
 /**
- * delete_dnodeint_at_index - deletes the node at index of a dlistint_t linked list
- * @head: double pointer to the head of the list
- * @index: index of the node that should be deleted, starting at 0
- * Return: 1 if it succeeded, -1 if it failed
+ * sum_dlistint - returns the sum of all the data (n) of a dlistint_t linked list
+ *
+ * @head: pointer to the head of the list
+ *
+ * Return: the sum of all the data (n) of the list, or 0 if the list is empty
  */
-int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
+int sum_dlistint(dlistint_t *head)
 {
-    dlistint_t *current, *to_delete;
-    unsigned int i = 0;
+    int sum = 0;
+    dlistint_t *current;
 
-    if (head == NULL || *head == NULL)
-        return (-1);
+    if (!head)
+        return (0);
 
-    current = *head;
-
-    if (index == 0)
+    current = head;
+    while (current)
     {
-        *head = current->next;
-        if (current->next != NULL)
-            current->next->prev = NULL;
-        free(current);
-        return (1);
-    }
-
-    while (current != NULL && i < index)
-    {
+        sum += current->n;
         current = current->next;
-        i++;
     }
 
-    if (current == NULL)
-        return (-1);
-
-    to_delete = current;
-    if (to_delete->next != NULL)
-        to_delete->next->prev = to_delete->prev;
-
-    if (to_delete->prev != NULL) 
-        to_delete->prev->next = to_delete->next;
-
-    free(to_delete);
-    return (1);
+    return (sum);
 }
-

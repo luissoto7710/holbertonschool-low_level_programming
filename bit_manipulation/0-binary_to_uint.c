@@ -19,7 +19,8 @@ unsigned int binary_to_uint(const char *b)
 	if (!b)
 		return (0);
 
-	while (*b) {
+	while (*b)
+       {
 		num <<= 1;
 		if (*b == '1')
 			num += 1;

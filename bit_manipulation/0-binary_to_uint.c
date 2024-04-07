@@ -1,16 +1,16 @@
 #include "main.h"
 
 /**
- * binary_to_uint - converts a binary number to an unsigned int
- * @b: pointer to a string of '0' and '1' chars
+ * binary_to_uint - Convert a binary number in a string to an unsigned int.
+ * @b: Pointer to a string containing a binary number ('0' and '1').
  *
- * Context: The string b is assumed to contain only '0's and '1's. This
- * function computes the decimal equivalent of the binary number represented
- * by the string.
+ * Context: Assumes @b is a valid pointer to a string composed exclusively
+ * of '0's and '1's, and calculates the decimal equivalent of the binary
+ * number represented by the string.
  *
- * Return: the converted number, or 0 if:
- * - there is one or more chars in the string b that is not '0' or '1'
- * - b is NULL
+ * Return: The decimal equivalent of the binary number, or 0 for any
+ * invalid input, including if @b is NULL or contains characters other
+ * than '0' or '1'.
  */
 unsigned int binary_to_uint(const char *b)
 {

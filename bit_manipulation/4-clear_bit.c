@@ -6,6 +6,7 @@
  * @n: var
  * @index: index
  *
+ * Description: DESC
  */
 int clear_bit(unsigned long int *n, unsigned int index)
 {

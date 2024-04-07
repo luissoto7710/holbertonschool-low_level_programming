@@ -3,7 +3,8 @@
  * read_textfile - desc
  * @filename: filename
  * @letters: letters
- * Return num:
+ * Return: num
+ * Descriprion: desc
 **/
 ssize_t read_textfile(const char *filename, size_t letters)
 {
